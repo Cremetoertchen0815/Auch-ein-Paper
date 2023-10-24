@@ -1,0 +1,24 @@
+\documentclass[a4paper, 12pt, oneside]{scrbook}
+\input{Properties/settings.tex}
+\addbibresource{Verwaltung/bibliography.bib}
+
+\begin{document}
+
+\frontmatter
+\input{Verwaltung/variablen.tex}
+\input{Properties/title.tex}
+\input{Verwaltung/verzeichnisse.tex}
+
+\mainmatter%Hauptteil: Normale Seitenzahlen und Kapitelanzeige
+\input{Kapitel/00_alleKapitel.tex}
+
+
+\backmatter
+\pagenumbering{roman}
+\sloppy
+
+\printbibliography%Quellen
+
+\input{Properties/ehrwoertlicheErklaerung}
+
+\end{document}

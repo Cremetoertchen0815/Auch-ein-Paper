@@ -1,0 +1,48 @@
+%Vorlage von JH73412
+%Version: 1.1.0
+
+%Anfang: DHBW-Vorlage
+\usepackage[
+    backend=biber, 
+    natbib=true,
+    style=numeric,
+    sorting=none
+]{biblatex}
+\usepackage[ngerman]{babel}		
+\usepackage[T1]{fontenc}	  	
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage[printonlyused ]{acronym}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{csquotes}
+\usepackage{fancyhdr}
+\usepackage{url}
+
+
+%DHBW formatierung
+%http://www.mosbach.dhbw.de/fileadmin/user/public/studienangebote/ib/Richtlinen_Gestaltung_ws._Arbeiten_Version_3_2017-01-01.pdf
+\usepackage[bottom=4cm,textwidth=17cm,top=3cm, headheight=60pt]{geometry}
+%\usepackage[scaled]{uarial}
+\usepackage[onehalfspacing]{setspace}
+
+
+\newcommand{\source}[1]{\caption*{Source: {#1}} }
+
+\renewcommand*{\headfont}{\normalfont}
+\renewcommand*{\multicitedelim}{\addsemicolon\space}
+\renewcommand*{\arraystretch}{1.5}
+
+\setlength{\parskip}{1.5ex}
+%Ende: DHBW-Vorlage
+
+\graphicspath{ {./Bilder/} }%setzen des Unterordners für Bilder
+
+\input{Properties/HeaderSettings.tex}
+\input{Properties/CodeSettings.tex}
+\input{Properties/FormelSettings.tex}

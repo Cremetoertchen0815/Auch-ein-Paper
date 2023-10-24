@@ -1,0 +1,11 @@
+%%%%Einstellen der Kopfzeile
+	\pagestyle{fancy}%Stil mit Kopfzeile
+	\fancyhf{}%Inhalt der Kopfzeile entfernen
+	%Eintellen der Anzeigeart für Kapitel in Kopfzeile
+	\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+	\renewcommand{\sectionmark}[1]{ \markright{#1}{} }
+	%Einfüger der Kopfzeile
+	\chead{\center{\leftmark}}
+	\rhead{\includegraphics[width=2cm]{dhbw_mosbach}}
+	%setzen der Seitenzahl auf allen Seiten
+	\cfoot{\thepage}

@@ -1,0 +1,30 @@
+# Inhaltsverzeichnis
+
+1. Einleitung
+2. Grundlagen
+    1. Neuronale Netze
+    2. Deep Learning
+    3. Generative Modelle
+3. Generative Adversarial Networks
+    1. Konzept
+    2. Architektur
+    3. Training
+4. Anwendungen von GANs
+    1. Bildsynthese
+    2. Super-Resolution
+    3. Style Transfer
+5. Herausforderungen und Lösungsansätze
+    1. Mode Collapse
+    2. Training Instability
+6. Schlussfolgerungen und Ausblick
+
+
+Einleitung: Abstract zum Thema
+
+# Einleitung
+
+Generative Adversarial Networks (GANs) haben in den letzten Jahren erhebliche Aufmerksamkeit in der Forschungsgemeinschaft auf sich gezogen. Sie stellen eine neue Methode dar, um generative Modelle zu trainieren und haben eine Vielzahl von Anwendungen in Bereichen wie Bildsynthese, Super-Resolution und Style Transfer.
+
+Das Ziel dieser Arbeit ist es, einen umfassenden Überblick über GANs zu geben, ihre Funktionsweise zu erklären und einige der Herausforderungen zu diskutieren, die bei ihrer Implementierung und ihrem Training auftreten.
+
+Das Paper ist wie folgt strukturiert: Nach dieser Einleitung werden in Kapitel 2 die Grundlagen von neuronalen Netzen, Deep Learning und generativen Modellen erläutert. Kapitel 3 ist den GANs gewidmet, wobei ihr Konzept, ihre Architektur und ihr Training im Detail besprochen werden. Kapitel 4 behandelt verschiedene Anwendungen von GANs, während Kapitel 5 einige der Herausforderungen und Lösungsansätze bei der Arbeit mit GANs diskutiert. Schließlich werden in Kapitel 6 Schlussfolgerungen gezogen und ein Ausblick auf zukünftige Forschungsrichtungen gegeben.

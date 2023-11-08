@@ -1,0 +1,3 @@
+Probleme von GAN: https://developers.google.com/machine-learning/gan/problems
+Basispaper: 
+Neuronales Netz (von dein Mama): https://books.google.de/books?hl=de&lr=&id=3irVBgAAQBAJ&oi=fnd&pg=PA2&dq=neuronale+netzwerke&ots=iIdnd2kHnu&sig=DPe713THXQNMernrptLAx17hfxo&redir_esc=y#v=onepage&q=neuronale%20netzwerke&f=false

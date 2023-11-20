@@ -2,4 +2,14 @@
 
 \section{Konzept}
 
+\noindent \acfp{GAN} basieren auf der zuvor genannten Technologie des unüberwachten Lernens und bedienen somit ähnliche Einsatzzwecke, nämlich der Generation von Daten, die vom menschlichen Gehirn nicht von reellen Daten unterscheiden lassen. Im Falle der \acp{GAN} geschieht dies mit der Hilfe von zwei unabhängigen, impliziten generativen Modellen: dem Generator und dem Diskriminator. Diese beiden Modelle werden als „adversarial“ (gegensätzlich) bezeichnet, da sie im Wettbewerb zueinander stehen und sich gegenseitig trainieren.  \\
+
+\noindent \textbf{Generator:} Der Generator erzeugt neue Daten, die echten Daten ähneln sollen. Dies könnte zum Beispiel das Generieren von Bildern, Texten oder sogar Musik sein. Der Generator wird mit zufälligem Rauschen als Eingabe gestartet und lernt im Laufe der Zeit, Daten zu erzeugen, die von einem echten Datensatz nicht zu unterscheiden sind. 
+
+\noindent \textbf{Diskriminator:} Der Diskriminator hat die Aufgabe, zwischen echten Daten und den vom Generator erzeugten Daten zu unterscheiden. Er wird mit einer Mischung aus echten und generierten Daten trainiert. Der Diskriminator lernt, die beiden Arten von Daten auseinanderzuhalten. \\
+
+\noindent Die beiden Modelle werden gleichzeitig trainiert. Der Generator wird trainiert, um den Diskriminator zu täuschen, indem er Daten erzeugt, die von echten Daten nicht zu unterscheiden sind. Der Diskriminator wird trainiert, um den Generator zu täuschen, indem er die vom Generator erzeugten Daten nicht von echten Daten unterscheiden kann. Die beiden Modelle trainieren sich schließlich gegenseitig, bis der Diskriminator circa die Hälfte der Daten nicht korrekt zuordnen kann. Zu diesem Zeitpunkt ist der Generator in der Lage, Daten zu erzeugen, die von echten Daten nicht zu unterscheiden sind. \\
+
+\noindent Der Prozess des Trainings wird in einem Nachfolgenden Kapitel noch näher behandelt. 
+
 \newpage

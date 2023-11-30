@@ -1,22 +1,35 @@
 \chapter{Anwendungen von GANs}
 
-\noindent 
-Das Ziel von GANs ist es, Modelle zu schaffen, die in der Lage sind, Daten zu generieren, die von menschlichen Beobachtern nicht von echten Daten unterschieden werden können. GANs haben Anwendungen in verschiedenen Bereichen gefunden, darunter Bildgenerierung, Stiltransfer, Super-Resolution, Generierung von realistischen Texten und mehr.
+\noindent Wie in den vorherigen Kapiteln gezeigt, sind GANs und seine Vielzahl an Varianten, in der Lage, eine Vielzahl von unterschiedlichen Aufgaben zu erfüllen, wobei die Arbeit mit visuellen und auditiven Inhalten aufgrund ihrer abstrakten Natur besonders hervorsticht. Im folgenden werden die Möglichkeiten der Technologie in Form von drei konkreten visuellen Einsatzzwecken näher untersucht. \\
 
 \section{Bildsynthese}
 
+\noindent Einer der prominentesten und eindrucksvollsten Einsatzzwecke ist die Bildsynthese. Hierbei wird ein GAN trainiert, um Bilder zu generieren, die von einem menschlichen Auge nicht von echten Bildern unterschieden werden können. Häufig wird eine Conditional GAN verwendet, damit der Anwender die Eigenschaften des generierten Bildes genau bestimmen kann. Einige Produkte und Technologien, welche von GANs für die Bildsynthese gebrauch machen, sind bereits heute über das Internet verfügbar, zum Beispiel Artbreeder. \\
 
-\noindent Im Bereich der Bildgenerierung werden diverse GANs bereits erfolgreich eingesetzt. Darunter sind Beispielsweise: 
-\begin{itemize}
-\item Artbreeder
-\item StyleGAN
-\item BigGAN
-\item CycleGAN
-\end{itemize}
+\noindent Artbreeder, ehemals GANbreeder, ist eine Webseite, welche es dem Anwender ermöglicht, Bilder zu generieren, indem er die Eigenschaften von mehreren Bildern kombiniert. Die Webseite verwendet hierfür BigGAN, ein großes Modell, welches auf einem Datensatz von 150 Gigabyte an gelabelten Daten trainiert wurde. Dabei erlaubt Artbreeder nicht nur die Kombination bestimmter Motive, sondern erlaubt auch das freie Modifizieren bestimmter Faktoren. Bild \ref{fig:artbreeder} zeigt beispielsweise das stilisierte Bild einer Frau, welches durch Zugabe des Hundeparameters modifiziert wurde. So lassen sich abstrakte Konzepte realisieren, wie das Darstellen des Gegenteils eines Objekts. 
 
-\noindent Jedoch ermöglicht das antagonistische System eines GAN, nicht nur die Möglichkeit bilder zu generieren, sondern auch generierte Bilder zu erkennen. So ist es möglich zu unterscheiden ob es sich beim vorliegenden Bild um ein Original handelt oder es durch eine AI generiert wurde.
-Dies hat insbesondere Relevanz, da in bezug auf, mittel künstlicher Intelligenz generierter Kunst, immer wieder die Frage des Urheberrechtschutzes im raum liegt. So ist es dank GAN möglich zu erkennen, falls urheberrechtsgeschützte Bilder als Ausgangsmaterial verwendet wurden. \\
+\newpage
 
-\noindent Dadurch könnten zukünftig einige moralische und ethische Fragen der KI-Kunst geklärt werden.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Artbreeder}
+    \caption{Demonstration von Artbreeder und Modifikation des Originals(links) durch Erhöhung des „Hundefaktors“} \quelle\url{https://www.artbreeder.com}
+\label{fig:artbreeder}
+\end{figure}
+
+
+    
+\noindent  Woran Artbreeder häufig scheitert, ist die Darstellung realistischer menschlicher Gesichter, welche häufig unnatürlich und seltsam wirken können.
+
+\begin{wrapfigure}[18]{l}{0.50\textwidth}
+    \centering
+    \includegraphics[width=0.50\textwidth]{this-person-does-not-exist}
+    \caption{KI-genertiertes Gesicht} \quelle\url{https://thispersondoesnotexist.com/}
+    \label{fig:tpdne}
+    \end{wrapfigure}
+
+\hfill
+\break
+Hier kommt StyleGAN ins Spiel. StyleGAN ist ein GAN, welches von Nvidia entwickelt wurde und sich auf die Generierung von Gesichtern spezialisiert hat. StyleGAN ist in der Lage, hochrealistische Bilder menschlicher Gesichter zu generieren, welche mit dem bloßen Auge kaum von echten menschlichen Gesichtern unterschieden werden können. Dies gilt besonders für StyleGAN 2, eine überarbeitete Version, die häufig auftretenden Artefakte reduziert und die generelle Bildqualität steigert. Ein bekannter und für jeden zugänglicher Beispiel für StyleGAN 2 ist „This Person does not exist“(siehe Bild \ref{fig:tpdne}), eine Webseite die bei Aufruf mithilfe dieses Netzes eine photorealistisches Bild eines menschlichen Gesichts generiert.
 
 \newpage
